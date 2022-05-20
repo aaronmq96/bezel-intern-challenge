@@ -1,16 +1,13 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-// import Magnifier from "react-magnifier";
-// import ReactImageMagnify from 'react-image-magnify';
+import '../styles/image-viewer.css'
 
-
-const Viewer = () => {
+const ImageViewer = () => {
 
     const images = [
-        'image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg', 'image5.jpg'
+        'image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg', 'image5.jpg',
     ]
+
 
     return (
         <Carousel
@@ -21,13 +18,10 @@ const Viewer = () => {
             {
                 images.map((image, index) => {
                     return (
-
-
                         <div key={index}>
                             <img
-                                src={require(`./assets/${image}`)}
-                                alt="One"
-
+                                src={require(`../../public/assets/${image}`)}
+                                alt={image}
                             />
                         </div>
                     )
@@ -39,5 +33,5 @@ const Viewer = () => {
     )
 }
 
-export default Viewer
+export default ImageViewer
 

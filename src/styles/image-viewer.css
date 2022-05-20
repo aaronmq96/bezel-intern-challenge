@@ -1,0 +1,96 @@
+.carousel-root {
+    height: 100vh;
+    /* background-color: white; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    position: relative;
+    border-radius: 50px;
+
+}
+
+.carousel-root>div:first-of-type {
+    height: 80%;
+}
+
+
+.carousel-root>div:first-of-type>:first-of-type ul {
+    height: 100%;
+}
+
+.carousel-root>div:first-of-type>div:first-of-type div {
+    height: 100%;
+    background-color: black;
+}
+
+.carousel-root>div:first-of-type>:first-of-type img {
+    height: 100%;
+    width: 60%;
+    object-fit: contain;
+
+
+}
+
+.carousel-root>div:nth-child(2) {
+    height: 20%;
+
+}
+
+.carousel-root>div:nth-child(2)>div:first-of-type {
+    margin: 0px;
+    text-align: center;
+
+}
+
+.control-dots,
+.carousel-status {
+    display: none;
+}
+
+.carousel>div:first-of-type {
+    height: 100%;
+}
+
+.control-arrow {
+    background-color: white;
+}
+
+.carousel-root>div:nth-child(2) ul {
+    height: 100%;
+    padding: 10px;
+
+}
+
+.carousel-root>div:nth-child(2) li {
+    height: 60%;
+    border-radius: 10px;
+
+}
+
+.carousel-root>div:nth-child(2) img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media(max-width:992px) {
+
+    .carousel-root>div:nth-child(2) {
+        height: 20%;
+        display: none;
+    }
+
+    .control-dots {
+        display: block;
+    }
+
+    .carousel-root {
+        height: 100vh;
+    }
+
+    .carousel-root>div:first-of-type {
+        height: 100%
+    }
+
+}
